@@ -40,7 +40,7 @@ export default {
         return {
             items: [
                 {
-                    title: 'Новояз Словарь',
+                    title: 'Словарь',
                     icon: 'lightbulb',
                     contrast: true,
                     to: { name: 'dictionary' }
