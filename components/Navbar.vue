@@ -1,26 +1,36 @@
 <template>
-    <b-navbar class="has-background-semitransparent column container-rounded mb-4 px-4 py-2">
-        <template #brand>
-            <div class="container ">
-                <div class="navbar-wrapper is-flex ">
-                    <!-- <b-navbar-item  >
-                    <button class=" mx-2 button is-link  is-uppercase" >
-                      НОВОЯЗ  
-                    </button>
-                </b-navbar-item> -->
-                    <NuxtLink :to="item.to" v-for="(item, key) of items" :key="key">
-                        <button class="my-2 mx-2 button is-rounded is-uppercase"
-                            v-bind:class="{ 'is-link': item.contrast, 'is-primary': !item.contrast }">
-                            {{ item.title }}
-                        </button>
-                    </NuxtLink>
 
+    <nav class="navbar has-background-semitransparent column container-rounded mb-4 px-4 py-2" role="navigation"
+        aria-label="main navigation">
+        <div class="is-transparent is-shadowless">
+            <div class="navbar-start is-flex " >
+                <div class="is-logo has-text-weight-bold gradient-animation my-2 mr-2 button is-rounded is-uppercase ">
+                    <!-- <img id="svglogo" src = "/hr.svg" alt="Новояз Россия 2022"/> -->
+                    <object data="/hr.svg" fill="white" width="42px" height="42px"> </object>
                 </div>
+                <NuxtLink :to="item.to" v-for="(item, key) of items" :key="key">
+                    <button class="navbar-item my-2 mr-2 button is-rounded is-uppercase"
+                        v-bind:class="{ 'is-link': item.contrast, 'is-primary': !item.contrast }">
+                        {{ item.title }}
+                    </button>
+                </NuxtLink>
             </div>
 
+            <!-- <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div> -->
+        </div>
+    </nav>
 
-        </template>
-    </b-navbar>
 </template>
 
 <script>
@@ -46,6 +56,10 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
+/* #svglogo {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+} */
 
 </style>

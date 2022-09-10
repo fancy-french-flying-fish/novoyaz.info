@@ -11,8 +11,51 @@ $family-primary: 'Source Serif 4', sans-serif;
 
 // @import "~bulma/sass/utilities/_all";
 @import "~bulma";
-@import "~buefy/src/scss/buefy";
 
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: linear-gradient(331deg, rgba(208, 225, 212,1) 0%, rgba(228, 190, 158,1) 50%, rgba(221,221,221,1) 100%); 
+}
+
+.gradient-animation {
+    // font-family: "Days One", sans-serif;
+    // font-size: 10rem;
+    text-align: center;
+    background-image: linear-gradient(
+      -45deg,
+      rgba(238, 119, 82, 1),
+      rgba(231, 60, 126, 1),
+      rgba(35, 166, 213, 1),
+      rgba(35, 213, 171, 1)
+    );
+    background-size: 400% 400%;
+    // background-clip: text;
+    // text-fill-color: transparent;
+    // -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+    animation: gradient 10s linear infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.is-logo {
+    border: 0px; 
+    width: 2.5rem;
+    height: 2.5rem;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+}
 .has-background-semitransparent {
     background: hsla(0, 0%, 100%, 0.25);
 }

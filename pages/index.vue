@@ -1,52 +1,28 @@
-<template>
-  <section class="section">
-    <div class="columns is-mobile">
-      <card
-        title="Free"
-        icon="github"
-      >
-        Open source on <a href="https://github.com/buefy/buefy">
-          GitHub
-        </a>
-      </card>
-
-      <card
-        title="Responsive"
-        icon="cellphone-link"
-      >
-        <b class="has-text-grey">
-          Every
-        </b> component is responsive
-      </card>
-
-      <card
-        title="Modern"
-        icon="alert-decagram"
-      >
-        Built with <a href="https://vuejs.org/">
-          Vue.js
-        </a> and <a href="http://bulma.io/">
-          Bulma
-        </a>
-      </card>
-
-      <card
-        title="Lightweight"
-        icon="arrange-bring-to-front"
-      >
-        No other internal dependency
-      </card>
-    </div>
+<template> 
+    <section class="container has-background-semitransparent  container-rounded p-3 my-4">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            {{ page.title }}
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <nuxt-content :document="page" />
+          </div>
+        </div>
+      </div>
   </section>
 </template>
 
-<script>
-import Card from '~/components/Card'
+<script> 
 
 export default {
-  name: 'IndexPage',
-  components: {
-    Card
+  async asyncData ({ $content }) {
+    const page = await $content('about').fetch()
+    return {
+      page
+    }
   }
 }
 </script>

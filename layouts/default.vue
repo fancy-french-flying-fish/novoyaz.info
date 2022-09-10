@@ -1,12 +1,14 @@
 <template>
-  <div class="container mx-2 is-max-desktop">
-    <NavBar/>
-    <section class="my-4">
-      <div class=" container-rounded ">
+  <section class="container pt-4 is-max-desktop">
+    <div class="mx-2 is-main">
+      <NavBar/>
+    <div class="my-4">
+      <div class="container-rounded">
         <Nuxt />
       </div>
-    </section>
-  </div>
+    </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -32,15 +34,12 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 .menu-list a:hover, .menu-list a.is-active, .menu_links-rounded {
   border-radius: 40px;
 }
 
-
-body {
-    margin: 0 !important;
-    padding: 0 !important;
-  background: linear-gradient(331deg, rgba(221,221,221,1) 0%, rgba(0,131,214,1) 50%, rgba(221,221,221,1) 100%); 
+.is-main {
+  min-height: 100vh;
 }
 </style>

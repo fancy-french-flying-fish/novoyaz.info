@@ -1,5 +1,8 @@
 # novoyaz.info
 
+- логотип как круг с челками снизу и сверху
+
+
 ## Build Setup
 
 ```bash
