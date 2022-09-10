@@ -3,7 +3,7 @@
     <div class="mx-2 is-main">
       <NavBar/>
     <div class="my-4">
-      <div class="container-rounded">
+      <div class="rounded-40px">
         <Nuxt />
       </div>
     </div>

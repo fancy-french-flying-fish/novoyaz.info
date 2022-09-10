@@ -3,7 +3,7 @@
 $primary: #088CE8;
 $link: #de5b85;
 $light: #bea5aa;
-$card-radius: 20px; 
+$card-radius: 30px; 
 $family-primary: 'Source Serif 4', sans-serif;
 
 
@@ -60,7 +60,7 @@ body {
     background: hsla(0, 0%, 100%, 0.25);
 }
 
-.container .container-rounded {
+.container .rounded-40px, .rounded-40px {
     border-radius: 40px;
 }
 

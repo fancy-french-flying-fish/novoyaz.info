@@ -1,5 +1,5 @@
 <template> 
-    <section class="container has-background-semitransparent  container-rounded p-3 my-4">
+    <section class="container has-background-semitransparent  rounded-40px p-3 my-4">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">

@@ -1,6 +1,6 @@
 <template>
 
-    <nav class="navbar has-background-semitransparent column container-rounded mb-4 px-4 py-2" role="navigation"
+    <nav class="navbar has-background-semitransparent column rounded-40px mb-4 px-4 py-2" role="navigation"
         aria-label="main navigation">
         <div class="is-transparent is-shadowless">
             <div class="navbar-start is-flex " >

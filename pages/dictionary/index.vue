@@ -2,10 +2,10 @@
   <div
     class=""
   >
-      <section class="container has-background-semitransparent container-rounded p-3 my-4">
+      <section class="container has-background-semitransparent rounded-40px p-3 my-4">
         <SearchForm @searchquery="applySearch"/>
       </section>
-      <section class="container has-background-semitransparent  container-rounded p-3 my-4">
+      <section class="container has-background-semitransparent  rounded-40px p-3 my-4">
         <Card
         v-for="word of dictionary" 
         :key="word.slug"
