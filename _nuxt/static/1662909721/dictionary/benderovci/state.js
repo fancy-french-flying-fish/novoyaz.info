@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1662909721",layout:"default",error:a,serverRendered:true,routePath:"\u002Fdictionary\u002Fbenderovci",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"1e1f3c8e"}}}}(null));
